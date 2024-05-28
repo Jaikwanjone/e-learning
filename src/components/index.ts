@@ -13,9 +13,26 @@ import Zapier from "../assets/Icons/Zapier.png";
 import Zoom from "../assets/Icons/Zoom.png";
 import topLeft from "../assets/Icons/topLeft.png";
 import Emily from "../assets/image/Emily.png";
+import FrontOne from "../assets/image/FrontOne.png";
+import FrontThree from "../assets/image/FrontThree.png";
+import FrontTwo from "../assets/image/FrontTwo.png";
+import GraphOne from "../assets/image/GraphOne.png";
+import GraphThree from "../assets/image/GraphThree.png";
+import GraphTwo from "../assets/image/GraphTwo.png";
 import Jason from "../assets/image/Jason.png";
 import Michale from "../assets/image/Michale.png";
+import MobileOne from "../assets/image/MobileOne.png";
+import MobileThree from "../assets/image/MobileThree.png";
+import MobileTwo from "../assets/image/MobileTwo.png";
 import Sarah from "../assets/image/Sarah.png";
+import UIOne from "../assets/image/UIOne.png";
+import UIThree from "../assets/image/UIThree.png";
+import UITwo from "../assets/image/UITwo.png";
+import WebOne from "../assets/image/WebOne.png";
+import WebThree from "../assets/image/WebThree.png";
+import WebTwo from "../assets/image/WebTwo.png";
+
+import { common } from "../pages/aboutUs/Common";
 interface Nav {
   lable: string;
   link: string;
@@ -76,6 +93,15 @@ export interface foot {
   thrid: string;
   forth?: string;
 }
+
+export interface benefit {
+  first: string;
+  second: string;
+  third: string;
+  fourth: string;
+  fiveth: string;
+}
+
 export const navItems: Nav[] = [
   {
     lable: "Home",
@@ -336,5 +362,110 @@ export const Foot: foot[] = [
     first: "Company",
     second: "Achievements",
     thrid: "Our Gools",
+  },
+];
+
+export const firstItem: common[] = [
+  {
+    title: "Web Design Fundamentals",
+    text: "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
+    lable: "View Courses",
+    image: [WebOne, WebTwo, WebThree],
+    time: "4 Weeks",
+    level: " Beginner",
+    teacher: "By John Smiith",
+    Benefit: [
+      {
+        first: "Introduction to HTML",
+        second: "Stylling with Css",
+        third: "Introtuce to Responsive Design",
+        fourth: "Design Principle for Web ",
+        fiveth: "Building a Basic Website",
+      },
+    ],
+  },
+];
+
+export const secondItem: common[] = [
+  {
+    title: "UI/UX Design",
+    text: "Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.",
+    lable: "View Courses",
+    image: [UIOne, UITwo, UIThree],
+    time: "6 Weeks",
+    level: " Intermediate",
+    teacher: "By Emily Johnson",
+    Benefit: [
+      {
+        first: "Introduction to UI/UX Desing",
+        second: "User Research and Personas",
+        third: "Wireframing and Prototyping",
+        fourth: "Visual Design and Branding",
+        fiveth: "Usability Testing and Iteration",
+      },
+    ],
+  },
+];
+
+export const thirdItem: common[] = [
+  {
+    title: "Mobile App Development",
+    text: "Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.",
+    lable: "View Courses",
+    image: [MobileOne, MobileTwo, MobileThree],
+    time: "8 Weeks",
+    level: " Intermediate",
+    teacher: "By David Brown",
+    Benefit: [
+      {
+        first: "Introduction to Mobile App Development",
+        second: "Fundamentals of Swift Programming (iOS)",
+        third: "Fundamentals of Kotlin Programming (Android)",
+        fourth: "Building User Interfaces ",
+        fiveth: "App Deployment and Testing",
+      },
+    ],
+  },
+];
+
+export const fourthItem: common[] = [
+  {
+    title: "Graphic Design for Beginners",
+    text: "Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.",
+    lable: "View Courses",
+    image: [GraphOne, GraphTwo, GraphThree],
+    time: "10 Weeks",
+    level: " Beginner",
+    teacher: "By Sarah Thompson",
+    Benefit: [
+      {
+        first: "Introduction to Graphic Design",
+        second: "Typography and Color Theory",
+        third: "Layout Design and Composition",
+        fourth: "Image Editing and Manipulation ",
+        fiveth: "Designing for Print and Digital Media",
+      },
+    ],
+  },
+];
+
+export const fivethItem: common[] = [
+  {
+    title: "Front-End Web Development",
+    text: "Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.",
+    lable: "View Courses",
+    image: [FrontOne, FrontTwo, FrontThree],
+    time: "10 Weeks",
+    level: " Intermediate",
+    teacher: "By Michael Adams",
+    Benefit: [
+      {
+        first: "HTML Fundamentals",
+        second: "CSS Styling and Layouts",
+        third: "JavaScript Basics",
+        fourth: "Building Responsive Websites",
+        fiveth: "Introduction to Bootstrap and React",
+      },
+    ],
   },
 ];

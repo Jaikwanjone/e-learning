@@ -10,7 +10,7 @@ const Mobile = () => {
   };
   const [open, setOpen] = useState<boolean>(false);
   return (
-    <div className="laptop:hidden z-10">
+    <div className="laptop:hidden z-20 relative">
       <img
         src={MenuBar}
         alt="menu bar "

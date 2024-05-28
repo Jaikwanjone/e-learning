@@ -16,7 +16,7 @@ const HomePage = () => {
       <HomeIntro />
       <Media />
       {/* Presentation start*/}
-      <div className="w-full relative laptop:p-8 p-4">
+      <div className="w-full relative laptop:p-8 p-4 z-10">
         <img
           src={Explain}
           alt="Presentation image"

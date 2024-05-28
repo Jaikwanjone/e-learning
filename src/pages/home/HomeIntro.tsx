@@ -5,7 +5,7 @@ import Button from "../../components/Button";
 const HomeIntro = () => {
   return (
     <div className=" mx-auto grid grid-cols-1 ">
-      <div className="flex teblet:gap-2  gap-1 relative shadow-sm tablet:p-2   justify-center items-center mx-auto  ">
+      <div className="flex teblet:gap-2  gap-1 static shadow-sm tablet:p-2   justify-center items-center mx-auto  z-10 ">
         <div className=" bg-orange-3 tablet:p-3 p-1 rounded-md">
           <img
             src={Flash}
