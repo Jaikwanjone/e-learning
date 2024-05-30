@@ -41,8 +41,14 @@ const Header = () => {
           </ul>
         </div>
         <div className="flex items-center gap-5">
-          <Button lable="Log In" className=" bg-white-1" />
-          <Button lable="Sign Up" className={" bg-orange-8 text-white-1"} />
+          <div>
+            {" "}
+            <Button lable="Log In" className=" bg-white-1" />
+          </div>
+          <div>
+            <Button lable="Sign Up" className={" bg-orange-8 text-white-1"} />
+          </div>
+
           <Mobile />
         </div>
       </nav>

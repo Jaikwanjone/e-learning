@@ -1,12 +1,27 @@
 import Adobe from "../assets/Icons/Adobe.png";
 import Amazon from "../assets/Icons/Amazon.png";
+import Awards from "../assets/Icons/Awards.png";
+import Phone from "../assets/Icons/Call.png";
+import Curve from "../assets/Icons/Curve.png";
+import Email from "../assets/Icons/Email.png";
+import Feedback from "../assets/Icons/Feedback.png";
 import FrontEnd from "../assets/Icons/FrontEnd.png";
 import Graphic from "../assets/Icons/GraphicDesign.png";
 import JavaScript from "../assets/Icons/Javascript.png";
+import Location from "../assets/Icons/Location.png";
 import MobileApp from "../assets/Icons/MobileApp.png";
 import Netflix from "../assets/Icons/Netflix.png";
 import Notion from "../assets/Icons/Notion.png";
+import Partners from "../assets/Icons/Partners.png";
+
+import FaceBook from "../assets/Icons/Facebook.png";
+import Linkin from "../assets/Icons/Linkin.png";
+import Problem from "../assets/Icons/Problem.png";
+import Promote from "../assets/Icons/Promote.png";
+import Skill from "../assets/Icons/Skill.png";
 import Spotify from "../assets/Icons/Spotify.png";
+import Trust from "../assets/Icons/Turst.png";
+import Twiter from "../assets/Icons/Twiter.png";
 import UIUX from "../assets/Icons/UIUX.png";
 import Web from "../assets/Icons/WebDesign.png";
 import Zapier from "../assets/Icons/Zapier.png";
@@ -31,8 +46,9 @@ import UITwo from "../assets/image/UITwo.png";
 import WebOne from "../assets/image/WebOne.png";
 import WebThree from "../assets/image/WebThree.png";
 import WebTwo from "../assets/image/WebTwo.png";
+import { AchieveProp } from "../pages/aboutus/AchieveCard";
 
-import { common } from "../pages/aboutUs/Common";
+import { common } from "../pages/courses/Common";
 interface Nav {
   lable: string;
   link: string;
@@ -40,6 +56,11 @@ interface Nav {
 interface LogoProp {
   id: number;
   image: string;
+}
+
+interface contactType {
+  icon: string[];
+  subject: string;
 }
 
 export interface benefitsItems {
@@ -108,20 +129,20 @@ export const navItems: Nav[] = [
     link: "/",
   },
   {
-    lable: "About Us",
-    link: "/about-us",
-  },
-  {
-    lable: "Contact",
-    link: "/contact",
-  },
-  {
     lable: "Course",
     link: "/course",
   },
   {
+    lable: "About Us",
+    link: "/about-us",
+  },
+  {
     lable: "Pricing",
     link: "/pricing",
+  },
+  {
+    lable: "Contact",
+    link: "/contact",
   },
 ];
 export const NavLogo: LogoProp[] = [
@@ -467,5 +488,69 @@ export const fivethItem: common[] = [
         fiveth: "Introduction to Bootstrap and React",
       },
     ],
+  },
+];
+
+export const Achiefirst: AchieveProp[] = [
+  {
+    icon: Trust,
+    head: "Trusted by Thousands",
+    body: "We have successfully served thousands of students, helping them unlock their potential and achieve their career goals.",
+  },
+  {
+    icon: Awards,
+    head: "Award-Winning Courses",
+    body: "Our courses have received recognition and accolades in the industry for their quality, depth of content, and effective teaching methodologies.",
+  },
+  {
+    icon: Feedback,
+    head: "Positive Student Feedback",
+    body: "We take pride in the positive feedback we receive from our students, who appreciate the practicality and relevance of our course materials.",
+  },
+  {
+    icon: Partners,
+    head: "Industry Partnerships",
+    body: "We have established strong partnerships with industry leaders, enabling us to provide our students with access to the latest tools and technologies",
+  },
+];
+export const Achiesecond: AchieveProp[] = [
+  {
+    icon: Skill,
+    head: "Provide Practical Skills",
+    body: "We focus on delivering practical skills that are relevant to the current industry demands. Our courses are designed to equip learners with the knowledge and tools needed to excel in their chosen field.",
+  },
+  {
+    icon: Problem,
+    head: "Foster Creative Problem-Solving",
+    body: "We encourage creative thinking and problem-solving abilities, allowing our students to tackle real-world challenges with confidence and innovation.",
+  },
+  {
+    icon: Promote,
+    head: "Promote Collaboration and Community",
+    body: "We believe in the power of collaboration and peer learning. Our platform fosters a supportive and inclusive community where learners can connect, share insights, and grow together.",
+  },
+  {
+    icon: Curve,
+    head: "Stay Ahead of the Curve",
+    body: "The digital landscape is constantly evolving, and we strive to stay at the forefront of industry trends. We regularly update our course content to ensure our students receive the latest knowledge and skills.",
+  },
+];
+
+export const Contacts: contactType[] = [
+  {
+    icon: [Email],
+    subject: "support@skillbridge.com",
+  },
+  {
+    icon: [Phone],
+    subject: "+9100000000000",
+  },
+  {
+    icon: [Location],
+    subject: "Some where  in the world",
+  },
+  {
+    icon: [FaceBook, Twiter, Linkin],
+    subject: "Social Profiles",
   },
 ];

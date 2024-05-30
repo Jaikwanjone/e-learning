@@ -46,9 +46,9 @@ function Footer() {
           <div className="">
             <h1 className="text-lg font-semibold mb-5">Social Profile</h1>
             <div className="flex gap-4">
-              <img src={Facebook} alt="" />
-              <img src={Twiter} alt="" />
-              <img src={Linkin} alt="" />
+              <img src={Facebook} alt="" className=" cursor-pointer" />
+              <img src={Twiter} alt="" className=" cursor-pointer" />
+              <img src={Linkin} alt="" className=" cursor-pointer" />
             </div>
           </div>
         </div>
