@@ -46,7 +46,7 @@ import UITwo from "../assets/image/UITwo.png";
 import WebOne from "../assets/image/WebOne.png";
 import WebThree from "../assets/image/WebThree.png";
 import WebTwo from "../assets/image/WebTwo.png";
-import { AchieveProp } from "../pages/aboutus/AchieveCard";
+import { AchieveProp } from "../pages/about-us/AchieveCard";
 
 import { common } from "../pages/courses/Common";
 interface Nav {

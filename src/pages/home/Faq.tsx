@@ -29,7 +29,7 @@ const Faq = () => {
       </div>
       <div className=" col-span-3 grid gap-5 ">
         {FAQs.map(({ id, text, mid }) => (
-          <div className={` bg-white-1 `}>
+          <div className={` bg-white-1 `} key={id}>
             <div className={` tablet:p-7 p-4  rounded-lg shadow-md`}>
               <div
                 className={`flex justify-between  items-center ${
