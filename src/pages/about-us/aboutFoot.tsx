@@ -18,7 +18,7 @@ const AboutFoot = () => {
       {/* <div className=" absolute tablet:top-0 bottom-[-50px] desktop:right-[17rem] laptop:right-[10rem] right-0 z-10 object-center ">
         <img src={Abstract} alt="" className=" max-w-[300px] " />
       </div> */}
-      <div className="z-20 tablet:mt-0 mt-6">
+      <div className=" tablet:mt-0 mt-6">
         <Button lable="Join Now" className=" bg-orange-8 text-white-1" />
       </div>
     </div>

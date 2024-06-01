@@ -16,16 +16,16 @@ const HomePage = () => {
       <HomeIntro />
       <Media />
       {/* Presentation start*/}
-      <div className="w-full relative laptop:p-8 p-4 z-10">
+      <div className="w-full relative laptop:p-8 p-4">
         <img
           src={Explain}
           alt="Presentation image"
-          className="w-full  rounded-md object-cover"
+          className="w-full  rounded-md brightness-75 z-0"
         />
         <img
           src={Stop}
           alt="Stop music"
-          className="w-[45px] tablet:w-[55px] laptop:w-[65px] absolute  top-[50%] right-[50%] "
+          className=" absolute w-[45px] tablet:w-[55px] laptop:w-[65px]  top-[50%] right-[50%] z-10 "
         />
       </div>
       {/* Presentation end */}

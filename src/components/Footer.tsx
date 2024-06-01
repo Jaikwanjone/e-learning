@@ -13,15 +13,15 @@ function Footer() {
         <div className=" col-span-3">
           <img src={Logo} alt="" width={48} height={48} />
           <div className="flex flex-col gap-3 items-start mt-5">
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
               <img src={Email} alt="" />
               <p>jaikwanpha@gmail.com</p>
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
               <img src={Call} alt="" />
               <p>0840961890</p>
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
               <img src={Location} alt="" />
               <p>Thailand</p>
             </div>
@@ -45,7 +45,7 @@ function Footer() {
           </div>
           <div className="">
             <h1 className="text-lg font-semibold mb-5">Social Profile</h1>
-            <div className="flex gap-4">
+            <div className="flex gap-4 ">
               <img src={Facebook} alt="" className=" cursor-pointer" />
               <img src={Twiter} alt="" className=" cursor-pointer" />
               <img src={Linkin} alt="" className=" cursor-pointer" />

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { navItems } from ".";
 import Logo from "../assets/Icons/Logo.png";
@@ -6,9 +7,49 @@ import Button from "./Button";
 import Mobile from "./Mobile";
 
 const Header = () => {
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isHeaderHidden, setIsHeaderHidden] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Optional: for smooth scrolling
+    });
+  };
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      // Scrolling down
+      setIsHeaderHidden(true);
+    } else {
+      // Scrolling up
+      setIsHeaderHidden(false);
+    }
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <header className=" px-3 pt-3 pb-2 shadow-sm sticky">
-      <div className="h-[48px] tablet:h-[56px] bg-orange-8  mx-auto laptop:w-[calc(100vw-50px)] rounded-[8px] tablet:mt-0 mt-4 shadow-sm">
+    <header
+      // className={` ${isHidden ? "block" : "hidden"}`}
+      className={` bg-white-1 px-3 pt-3 pb-2 sticky z-30 shadow-md  ${
+        isHeaderHidden
+          ? " top-[-60px] tablet:top-[-68px] "
+          : "top-[-1px] shadow"
+      } transition-all duration-700 `}
+    >
+      <div
+        className={`h-[48px] tablet:h-[56px] bg-orange-8  mx-auto laptop:w-[calc(100vw-50px)] rounded-[8px]  shadow-sm `}
+      >
         <div className="h-full flex items-center justify-center gap-3">
           <p className="text-sm tablet:text-lg text-white-1 font-medium">
             Free Courses 🌟 Sale Ends Soon, Get It Now
@@ -33,6 +74,7 @@ const Header = () => {
               <NavLink
                 key={lable}
                 to={link}
+                onClick={scrollToTop}
                 className="tablet:text-lg laptop:text-xl text-sm"
               >
                 {lable}
