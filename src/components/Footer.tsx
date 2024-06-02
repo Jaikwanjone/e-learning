@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Call from "../assets/Icons/Call.png";
 import Email from "../assets/Icons/Email.png";
 import Facebook from "../assets/Icons/Facebook.png";
@@ -46,7 +47,9 @@ function Footer() {
           <div className="">
             <h1 className="text-lg font-semibold mb-5">Social Profile</h1>
             <div className="flex gap-4 ">
-              <img src={Facebook} alt="" className=" cursor-pointer" />
+              <Link to={"https://web.facebook.com/k.p.JaiKwan"}>
+                <img src={Facebook} alt="" className=" cursor-pointer" />
+              </Link>
               <img src={Twiter} alt="" className=" cursor-pointer" />
               <img src={Linkin} alt="" className=" cursor-pointer" />
             </div>

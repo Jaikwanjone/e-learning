@@ -79,6 +79,7 @@ export interface CourseProp {
 }
 
 export interface Testi {
+  id?: number;
   name: string;
   image: string;
   review: string;
@@ -253,24 +254,28 @@ export const Courses: CourseProp[] = [
 
 export const Testimonal: Testi[] = [
   {
+    id: 1,
     name: "Sarah L",
     image: Sarah,
     review:
       "The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!",
   },
   {
+    id: 2,
     name: "Jason M",
     image: Jason,
     review:
       "The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!",
   },
   {
+    id: 3,
     name: "Emily R",
     image: Emily,
     review:
       "The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!",
   },
   {
+    id: 4,
     name: "Michale K",
     image: Michale,
     review:

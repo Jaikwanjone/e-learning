@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { navItems } from ".";
 import Logo from "../assets/Icons/Logo.png";
 import RightArrow from "../assets/Icons/rightArrow.png";
@@ -83,13 +83,13 @@ const Header = () => {
           </ul>
         </div>
         <div className="flex items-center gap-5">
-          <div>
-            {" "}
+          <Link to="/login">
             <Button lable="Log In" className=" bg-white-1" />
-          </div>
-          <div>
+          </Link>
+
+          <Link to="/signup">
             <Button lable="Sign Up" className={" bg-orange-8 text-white-1"} />
-          </div>
+          </Link>
 
           <Mobile />
         </div>
